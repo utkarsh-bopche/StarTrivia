@@ -9,5 +9,6 @@ import UIKit
 
 let BLACK_BG = UIColor.black.withAlphaComponent(0.6).cgColor
 
-let BASE_URL = "https://swapi.dev/api/ "
+let BASE_URL = "https://swapi.dev/api/"
 let PERSON_URL = BASE_URL + "people/1/"
+
