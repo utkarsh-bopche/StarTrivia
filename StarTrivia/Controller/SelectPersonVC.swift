@@ -23,10 +23,23 @@ class SelectPersonVC: UIViewController {
     //MARK:- Lifecycle Method
     override func viewDidLoad() {
         super.viewDidLoad()
-        personApi.getRandomPersonUrlSession()
-        
     }
 
+//MARK:-IBActions
+    @IBAction func randomClicked(_ sender: Any) {
+        let random = Int.random(in: 1 ... 87)
+        personApi.getRandomPersonAlamo(id: random) { (person) in
+            if let person = person{
+               // print(person.name)
+                self.nameLabel.text = person.name
+                self.heightLabel.text = person.height
+                self.massLabel.text = person.mass
+                self.hairLabel.text = person.hair
+                self.birthYearLabel.text = person.birthYear
+                self.genderLabel.text = person.gender
+            }
+        }    }
+    
 //    deinit {
 //        print(<#T##items: Any...##Any#>)
 //    }
