@@ -17,6 +17,10 @@ class SelectPersonVC: UIViewController {
     @IBOutlet weak var birthYearLabel: UILabel!
     @IBOutlet weak var genderLabel: UILabel!
     
+    @IBOutlet weak var homeWorldBtn: UIButton!
+    @IBOutlet weak var vehiclesBtn: UIButton!
+    @IBOutlet weak var starshipsBtn: UIButton!
+    @IBOutlet weak var filmsBtn: UIButton!
     //MARK:-Variables
     var personApi = PersonApi()
     
@@ -31,16 +35,41 @@ class SelectPersonVC: UIViewController {
         personApi.getRandomPersonAlamo(id: random) { (person) in
             if let person = person{
                // print(person.name)
-                self.nameLabel.text = person.name
-                self.heightLabel.text = person.height
-                self.massLabel.text = person.mass
-                self.hairLabel.text = person.hair
-                self.birthYearLabel.text = person.birthYear
-                self.genderLabel.text = person.gender
+                self.setupView(person: person)
             }
-        }    }
+        }
+        
+    }
     
-//    deinit {
+    func setupView(person:Person){
+        self.nameLabel.text = person.name
+        self.heightLabel.text = person.height
+        self.massLabel.text = person.mass
+        self.hairLabel.text = person.hair
+        self.birthYearLabel.text = person.birthYear
+        self.genderLabel.text = person.gender
+        
+        homeWorldBtn.isEnabled = !person.homeworldUrl.isEmpty
+        vehiclesBtn.isEnabled = !person.vehicleUrls.isEmpty
+        starshipsBtn.isEnabled = !person.starshipUrls.isEmpty
+        filmsBtn.isEnabled = !person.vehicleUrls.isEmpty
+            
+    
+        
+    }
+    
+    @IBAction func homeWorldClicked(_ sender: Any) {
+    }
+    
+    @IBAction func vehiclesClicked(_ sender: Any) {
+    }
+    
+    @IBAction func starshipsClicked(_ sender: Any) {
+    }
+    
+    @IBAction func filmsClicked(_ sender: Any) {
+    }
+    //    deinit {
 //        print(<#T##items: Any...##Any#>)
 //    }
 }

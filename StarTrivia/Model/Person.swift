@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct Person : Decodable {
+
+struct Person : Codable{
     let name : String
     let height : String
     let mass : String
@@ -19,13 +20,13 @@ struct Person : Decodable {
     let vehicleUrls : [String]
     let starshipUrls: [String]
     
-    enum CodingKeys : String, CodingKey {
-        case name
-        case height
-        case mass
+    enum CodingKeys : String,Codable {
+        case name = "name"
+        case height = "height"
+        case mass = "mass"
         case hair = "hair_color"
         case birthYear = "birth_year"
-        case gender
+        case gender = "gender"
         case homeworldUrl = "homeworld"
         case filmUrls = "films"
         case vehiclesUrls = "vehicles"
