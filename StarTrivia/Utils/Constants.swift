@@ -13,3 +13,5 @@ let BASE_URL = "https://swapi.dev/api/"
 let PERSON_URL = BASE_URL + "people/"
 
 typealias PersonResponseCompletion = (Person?) -> Void
+typealias HomeworldResponseCompletion = (Homeworld?) -> Void
+typealias VehicleResponseCompletion = (Vehicle?) -> Void

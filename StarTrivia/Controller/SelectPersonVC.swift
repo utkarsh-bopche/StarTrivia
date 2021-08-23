@@ -23,6 +23,7 @@ class SelectPersonVC: UIViewController {
     @IBOutlet weak var filmsBtn: UIButton!
     //MARK:-Variables
     var personApi = PersonApi()
+    var person : Person!
     
     //MARK:- Lifecycle Method
     override func viewDidLoad() {
@@ -36,6 +37,7 @@ class SelectPersonVC: UIViewController {
             if let person = person{
                // print(person.name)
                 self.setupView(person: person)
+                self.person = person
             }
         }
         
@@ -58,19 +60,62 @@ class SelectPersonVC: UIViewController {
         
     }
     
-    @IBAction func homeWorldClicked(_ sender: Any) {
-    }
-    
-    @IBAction func vehiclesClicked(_ sender: Any) {
-    }
-    
-    @IBAction func starshipsClicked(_ sender: Any) {
-    }
-    
-    @IBAction func filmsClicked(_ sender: Any) {
-    }
-    //    deinit {
-//        print(<#T##items: Any...##Any#>)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if var destination = segue.destination as? PersonProtocol {
+            destination.person = person
+        }
+//        switch segue.identifier {
+//        case Segue.home.rawValue:
+//            if let destination = segue.destination as? HomeworldVC {
+//                destination.person = person
+//            }
+//        case Segue.vehicles.rawValue:
+//            if let destination = segue.destination as? VehiclesVC {
+//                destination.person = person
+//            }
+//        case Segue.starships.rawValue:
+//            if let destination = segue.destination as? StarshipsVC{
+//                destination.person = person
+//            }
+//        case Segue.films.rawValue:
+//            if let destination = segue.destination as? FilmsVC {
+//                destination.person = person
+//            }
+//        default:
+//            break
+//        }
+        //Use of switch case
+//        if segue.identifier == "toHomeworld" {
+//            if let destination = segue.destination as? HomeworldVC {
+//                destination.person = person
+//            }
+//        }else if segue.identifier == "toVehicles" {
+//            if let destination = segue.destination as? VehiclesVC {
+//                destination.person = person
+//            }
+//        }else if segue.identifier == "toStarships" {
+//            if let destination = segue.destination as? StarshipsVC {
+//                destination.person = person
+//            }
+//        }else if segue.identifier == "toFilms" {
+//            if let destination = segue.destination as? FilmsVC {
+//                destination.person = person
+//            }
+//        }
 //    }
+        //Enum here use for above switch case
+//    enum Segue : String {
+//        case home = "toHomeWorld"
+//        case vehicles = "toVehicles"
+//        case starships = "toStarships"
+//        case films = "toFilms"
+//    }
+    }
+}
+
+protocol PersonProtocol {
+    var person: Person! {
+        get set
+    }
 }
 

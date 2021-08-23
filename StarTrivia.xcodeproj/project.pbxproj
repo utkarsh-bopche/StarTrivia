@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1822909E26D3DC140080DF68 /* Homeworld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1822909D26D3DC140080DF68 /* Homeworld.swift */; };
+		182290A126D3DC920080DF68 /* HomeworldApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182290A026D3DC920080DF68 /* HomeworldApi.swift */; };
+		182290A526D3EFD10080DF68 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182290A426D3EFD10080DF68 /* Vehicle.swift */; };
+		182290A826D402660080DF68 /* VehicleApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182290A726D402660080DF68 /* VehicleApi.swift */; };
 		1833E8E926D0031800675E85 /* FadeEnabledBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1833E8E826D0031800675E85 /* FadeEnabledBtn.swift */; };
 		1833E8EC26D00AA000675E85 /* HomeworldVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1833E8EB26D00AA000675E85 /* HomeworldVC.swift */; };
 		1833E8EF26D00AC500675E85 /* VehiclesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1833E8EE26D00AC500675E85 /* VehiclesVC.swift */; };
@@ -29,6 +33,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1822909D26D3DC140080DF68 /* Homeworld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homeworld.swift; sourceTree = "<group>"; };
+		182290A026D3DC920080DF68 /* HomeworldApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworldApi.swift; sourceTree = "<group>"; };
+		182290A426D3EFD10080DF68 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		182290A726D402660080DF68 /* VehicleApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleApi.swift; sourceTree = "<group>"; };
 		1833E8E826D0031800675E85 /* FadeEnabledBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeEnabledBtn.swift; sourceTree = "<group>"; };
 		1833E8EB26D00AA000675E85 /* HomeworldVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworldVC.swift; sourceTree = "<group>"; };
 		1833E8EE26D00AC500675E85 /* VehiclesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesVC.swift; sourceTree = "<group>"; };
@@ -78,6 +86,8 @@
 			isa = PBXGroup;
 			children = (
 				186E1EB326C3E4EF00678960 /* PersonApi.swift */,
+				182290A026D3DC920080DF68 /* HomeworldApi.swift */,
+				182290A726D402660080DF68 /* VehicleApi.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -108,10 +118,10 @@
 				18972C0026C2B23300F6AACD /* Controller */,
 				18972BE126C2A87D00F6AACD /* AppDelegate.swift */,
 				18972BE326C2A87D00F6AACD /* SceneDelegate.swift */,
-				18972BE726C2A87D00F6AACD /* Main.storyboard */,
 				186E1EB226C3E4AE00678960 /* Services */,
 				186E1EAD26C3AB7300678960 /* Utils */,
 				18972BFF26C2B1ED00F6AACD /* Resources */,
+				18972BE726C2A87D00F6AACD /* Main.storyboard */,
 				18972BEA26C2A87F00F6AACD /* Assets.xcassets */,
 				18972BEC26C2A87F00F6AACD /* LaunchScreen.storyboard */,
 				18972BEF26C2A87F00F6AACD /* Info.plist */,
@@ -162,6 +172,8 @@
 			isa = PBXGroup;
 			children = (
 				18445CF626C55CE100C41D12 /* Person.swift */,
+				1822909D26D3DC140080DF68 /* Homeworld.swift */,
+				182290A426D3EFD10080DF68 /* Vehicle.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -302,7 +314,10 @@
 			files = (
 				1833E8F526D00B0000675E85 /* FilmsVC.swift in Sources */,
 				186E1EAF26C3ABA200678960 /* Constants.swift in Sources */,
+				182290A126D3DC920080DF68 /* HomeworldApi.swift in Sources */,
+				182290A526D3EFD10080DF68 /* Vehicle.swift in Sources */,
 				186E1EB426C3E4EF00678960 /* PersonApi.swift in Sources */,
+				182290A826D402660080DF68 /* VehicleApi.swift in Sources */,
 				18972BE626C2A87D00F6AACD /* SelectPersonVC.swift in Sources */,
 				1833E8EF26D00AC500675E85 /* VehiclesVC.swift in Sources */,
 				1833E8EC26D00AA000675E85 /* HomeworldVC.swift in Sources */,
@@ -310,6 +325,7 @@
 				1833E8F226D00AEB00675E85 /* StarshipsVC.swift in Sources */,
 				18445CF726C55CE100C41D12 /* Person.swift in Sources */,
 				18972BE226C2A87D00F6AACD /* AppDelegate.swift in Sources */,
+				1822909E26D3DC140080DF68 /* Homeworld.swift in Sources */,
 				1833E8E926D0031800675E85 /* FadeEnabledBtn.swift in Sources */,
 				18972BE426C2A87D00F6AACD /* SceneDelegate.swift in Sources */,
 			);
