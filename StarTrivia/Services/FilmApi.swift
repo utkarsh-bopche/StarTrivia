@@ -1,34 +1,33 @@
 //
-//  VehicleApi.swift
+//  FilmApi.swift
 //  StarTrivia
 //
-//  Created by Apple on 23/08/21.
+//  Created by Apple on 24/08/21.
 //
 
 import Foundation
 import Alamofire
 
-class VehicleApi {
+class FilmsApi{
     //MARK:- Web Request with Alamofire and Codable
-    func getVehicle(url: String , completion : @escaping VehicleResponseCompletion) {
-        guard let url = URL(string: url) else { return }
+    func getFilm(url:String, completion: @escaping FilmResponseCompletion) {
+        guard let url = URL(string: url) else { return}
         AF.request(url).responseJSON { (response) in
-            if let error = response.error {
+            if let error = response.error{
                 debugPrint(error.localizedDescription)
                 completion(nil)
                 return
             }
             guard let data = response.data else {return completion(nil)}
-            let jsonDecoder = JSONDecoder()
+             let jsonDecoder = JSONDecoder()
             do{
-                let vehicle = try jsonDecoder.decode(Vehicle.self, from: data)
-                completion(vehicle)
+                let film = try jsonDecoder.decode(Film.self, from: data)
+                completion(film)
+                return
             }catch{
                 debugPrint(error.localizedDescription)
                 completion(nil)
-               
             }
         }
     }
-    
 }

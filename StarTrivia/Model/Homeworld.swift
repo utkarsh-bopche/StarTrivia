@@ -7,7 +7,7 @@
 
 import Foundation
 
-
+//Homeworld Model
 struct Homeworld : Codable {
     let name: String
     let climate: String

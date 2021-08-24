@@ -29,6 +29,10 @@
 		18972BFA26C2B1CD00F6AACD /* Starjout.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18972BF726C2B1CD00F6AACD /* Starjout.ttf */; };
 		18972BFB26C2B1CD00F6AACD /* Starjedi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18972BF826C2B1CD00F6AACD /* Starjedi.ttf */; };
 		18972BFC26C2B1CD00F6AACD /* Starjhol.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18972BF926C2B1CD00F6AACD /* Starjhol.ttf */; };
+		18FB81F826D4C3C900B2AA03 /* Starship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FB81F726D4C3C900B2AA03 /* Starship.swift */; };
+		18FB81FB26D4C8FB00B2AA03 /* StarshipApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FB81FA26D4C8FB00B2AA03 /* StarshipApi.swift */; };
+		18FB81FE26D4DE2C00B2AA03 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FB81FD26D4DE2C00B2AA03 /* Film.swift */; };
+		18FB820126D4DFBC00B2AA03 /* FilmApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FB820026D4DFBC00B2AA03 /* FilmApi.swift */; };
 		5226C77759DCF28B4435ACFB /* Pods_StarTrivia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E516A4CE413C303E8AFC63B /* Pods_StarTrivia.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +61,10 @@
 		18972BF726C2B1CD00F6AACD /* Starjout.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjout.ttf; sourceTree = "<group>"; };
 		18972BF826C2B1CD00F6AACD /* Starjedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjedi.ttf; sourceTree = "<group>"; };
 		18972BF926C2B1CD00F6AACD /* Starjhol.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjhol.ttf; sourceTree = "<group>"; };
+		18FB81F726D4C3C900B2AA03 /* Starship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Starship.swift; sourceTree = "<group>"; };
+		18FB81FA26D4C8FB00B2AA03 /* StarshipApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipApi.swift; sourceTree = "<group>"; };
+		18FB81FD26D4DE2C00B2AA03 /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
+		18FB820026D4DFBC00B2AA03 /* FilmApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmApi.swift; sourceTree = "<group>"; };
 		7E516A4CE413C303E8AFC63B /* Pods_StarTrivia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarTrivia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E76B9EB028E854BE8CCD030 /* Pods-StarTrivia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarTrivia.debug.xcconfig"; path = "Target Support Files/Pods-StarTrivia/Pods-StarTrivia.debug.xcconfig"; sourceTree = "<group>"; };
 		D3961CEF9014E729BEC4E925 /* Pods-StarTrivia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarTrivia.release.xcconfig"; path = "Target Support Files/Pods-StarTrivia/Pods-StarTrivia.release.xcconfig"; sourceTree = "<group>"; };
@@ -88,6 +96,8 @@
 				186E1EB326C3E4EF00678960 /* PersonApi.swift */,
 				182290A026D3DC920080DF68 /* HomeworldApi.swift */,
 				182290A726D402660080DF68 /* VehicleApi.swift */,
+				18FB81FA26D4C8FB00B2AA03 /* StarshipApi.swift */,
+				18FB820026D4DFBC00B2AA03 /* FilmApi.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -116,11 +126,11 @@
 				18972C0226C2B26200F6AACD /* Model */,
 				18972C0126C2B25000F6AACD /* View */,
 				18972C0026C2B23300F6AACD /* Controller */,
-				18972BE126C2A87D00F6AACD /* AppDelegate.swift */,
-				18972BE326C2A87D00F6AACD /* SceneDelegate.swift */,
 				186E1EB226C3E4AE00678960 /* Services */,
 				186E1EAD26C3AB7300678960 /* Utils */,
 				18972BFF26C2B1ED00F6AACD /* Resources */,
+				18972BE126C2A87D00F6AACD /* AppDelegate.swift */,
+				18972BE326C2A87D00F6AACD /* SceneDelegate.swift */,
 				18972BE726C2A87D00F6AACD /* Main.storyboard */,
 				18972BEA26C2A87F00F6AACD /* Assets.xcassets */,
 				18972BEC26C2A87F00F6AACD /* LaunchScreen.storyboard */,
@@ -174,6 +184,8 @@
 				18445CF626C55CE100C41D12 /* Person.swift */,
 				1822909D26D3DC140080DF68 /* Homeworld.swift */,
 				182290A426D3EFD10080DF68 /* Vehicle.swift */,
+				18FB81F726D4C3C900B2AA03 /* Starship.swift */,
+				18FB81FD26D4DE2C00B2AA03 /* Film.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -312,13 +324,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18FB81FB26D4C8FB00B2AA03 /* StarshipApi.swift in Sources */,
 				1833E8F526D00B0000675E85 /* FilmsVC.swift in Sources */,
 				186E1EAF26C3ABA200678960 /* Constants.swift in Sources */,
 				182290A126D3DC920080DF68 /* HomeworldApi.swift in Sources */,
 				182290A526D3EFD10080DF68 /* Vehicle.swift in Sources */,
 				186E1EB426C3E4EF00678960 /* PersonApi.swift in Sources */,
+				18FB820126D4DFBC00B2AA03 /* FilmApi.swift in Sources */,
 				182290A826D402660080DF68 /* VehicleApi.swift in Sources */,
 				18972BE626C2A87D00F6AACD /* SelectPersonVC.swift in Sources */,
+				18FB81F826D4C3C900B2AA03 /* Starship.swift in Sources */,
 				1833E8EF26D00AC500675E85 /* VehiclesVC.swift in Sources */,
 				1833E8EC26D00AA000675E85 /* HomeworldVC.swift in Sources */,
 				186E1EAB26C3AA4400678960 /* BlackBgView.swift in Sources */,
@@ -327,6 +342,7 @@
 				18972BE226C2A87D00F6AACD /* AppDelegate.swift in Sources */,
 				1822909E26D3DC140080DF68 /* Homeworld.swift in Sources */,
 				1833E8E926D0031800675E85 /* FadeEnabledBtn.swift in Sources */,
+				18FB81FE26D4DE2C00B2AA03 /* Film.swift in Sources */,
 				18972BE426C2A87D00F6AACD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

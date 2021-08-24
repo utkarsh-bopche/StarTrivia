@@ -1,16 +1,16 @@
 //
-//  VehicleApi.swift
+//  StarshipApi.swift
 //  StarTrivia
 //
-//  Created by Apple on 23/08/21.
+//  Created by Apple on 24/08/21.
 //
 
 import Foundation
 import Alamofire
 
-class VehicleApi {
+class StarshipApi {
     //MARK:- Web Request with Alamofire and Codable
-    func getVehicle(url: String , completion : @escaping VehicleResponseCompletion) {
+    func getStarship(url: String , completion : @escaping StarshipResponseCompletion) {
         guard let url = URL(string: url) else { return }
         AF.request(url).responseJSON { (response) in
             if let error = response.error {
@@ -21,8 +21,8 @@ class VehicleApi {
             guard let data = response.data else {return completion(nil)}
             let jsonDecoder = JSONDecoder()
             do{
-                let vehicle = try jsonDecoder.decode(Vehicle.self, from: data)
-                completion(vehicle)
+                let starship = try jsonDecoder.decode(Starship.self, from: data)
+                completion(starship)
             }catch{
                 debugPrint(error.localizedDescription)
                 completion(nil)

@@ -1,14 +1,14 @@
 //
-//  Vehicle.swift
+//  Starship.swift
 //  StarTrivia
 //
-//  Created by Apple on 23/08/21.
+//  Created by Apple on 24/08/21.
 //
 
 import Foundation
 
-//Vehicle Model
-struct Vehicle: Codable  {
+//Starship Model
+struct Starship : Codable  {
     let name : String
     let model : String
     let manufacturer : String

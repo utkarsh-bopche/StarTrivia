@@ -10,6 +10,7 @@ import Alamofire
  
 class HomeworldApi {
     
+    //MARK:- Web Request with Alamofire and Codable
     func getHomeworld(url: String , completion : @escaping HomeworldResponseCompletion) {
         guard let url = URL(string: url) else { return }
         AF.request(url).responseJSON { (response) in
